@@ -1,0 +1,3 @@
+/Volumes/coding/so_long1/cmake-build-debug/CMakeFiles/so_long1.dir
+/Volumes/coding/so_long1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/coding/so_long1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
