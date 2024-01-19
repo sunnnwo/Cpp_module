@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sun-wkim <sun-wkim@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sun-wkim@student.42lausanne.ch <sun-wki    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/08 11:50:15 by sun-wkim          #+#    #+#             */
-/*   Updated: 2024/01/08 14:25:23 by sun-wkim         ###   ########.fr       */
+/*   Created: 2024/01/18 14:44:07 by sun-wkim@st       #+#    #+#             */
+/*   Updated: 2024/01/18 15:20:44 by sun-wkim@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_H
-# define CONTACT_H
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
+# include <iostream>
 # include <string>
-class Contact
+
+class Zombie
 {
 	private:
-		std::string f_name;
-		std::string l_name;
-		std::string n_name;
-		std::string p_number;
-		std::string secret;
-		std::string SubstrField(std::string);
-	
+		std::string	name;
 	public:
-		int	Insert();
-		void Display();
-		void DisplaySimpleField();
+		Zombie(std::string name);
+		~Zombie(void);
+		void	announce(void);
 };
+
+Zombie	*newZombie(std::string name);
+void	randomChump(std::string name);
+
 
 #endif
